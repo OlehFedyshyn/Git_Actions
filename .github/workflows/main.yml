@@ -15,5 +15,8 @@ jobs:
         run: ls -la
       - name: Update
         run: sudo apt update
-      
+      - name: Final result
+        run: |
+          sudo chmod 755 MyBash.sh
+          ./MyBash.sh
       
