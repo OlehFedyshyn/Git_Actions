@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Git Clone
-        uses: actions/checout@v1
+        uses: actions/checkout@v1
       - name: Checking what we got
         run: ls -la
       
