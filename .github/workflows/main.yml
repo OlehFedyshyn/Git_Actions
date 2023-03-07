@@ -1,0 +1,19 @@
+name: My-GitHabAction-Beta
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  first_test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Command
+        run: echo "Hello World"
+
+  second_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Final Deploy
+        run: echo "Hello World"
