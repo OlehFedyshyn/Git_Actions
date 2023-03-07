@@ -6,14 +6,11 @@ on:
       - main
 
 jobs:
-  first_test:
+  main_Actioms:
     runs-on: ubuntu-latest
     steps:
-      - name: Echo Command
-        run: echo "Hello World"
-
-  second_deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Final Deploy
-        run: echo "Hello World"
+      - name: Git Clone
+        run: actions/checout@v1
+      - name: Checking what we got
+        run: ls -la
+      
