@@ -13,4 +13,7 @@ jobs:
         uses: actions/checkout@v1
       - name: Checking what we got
         run: ls -la
+      - name: Update
+        run: sudo apt update
+      
       
